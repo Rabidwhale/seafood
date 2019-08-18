@@ -31,4 +31,25 @@
       <li>
         Let it rest for 5 minutes. When it is done, I would suggest serving it with rice and steamed vegetables.
       </li>
+    </ol>
+
+    <h1>Comments</h1>
+
+    <% @comments.each do |comment| %>
+      <div>
+        <blockquote>
+          <b><%= comment.rating %></b> -
+            <%= comment.message %>
+          <small><%= comment.user.email %></small>
+        </blockquote>
+      </div>
+    <% end %>
+
+  <div class="clear"></div>
+  <%= simple_form_for Comment.new do |f| %>
+    <%= f.input :message %>
+    <%= f.input :rating %>
+    <%= f.hidden_field :recipe_name, value: :bass %>
+    <%= f.submit "Add a Comment", class: 'btn btn-primary' %>
+  <% end %>
 </div>

@@ -1,35 +1,13 @@
 @import "bootstrap";
 
 body {
-  background: image_url('dark-paths.png');
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Seriff", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 
 .navbar {
-  background: image_url('vintage-concrete.png');
   box-shadow: 0px 1px 3px #2a2a2a;
 }
 
-h1 {
-  color: #ffffe8;
-}
-
-h2 {
-  color: #ffffe8;
-}
-
-h3 {
-  color: #ffffe8;
-}
-
-p {
-  color: #ffffe8;
-}
-
-ol {
-  color: #ffffe8;
-}
-
-a {
-  color: #000000;
+.clear {
+  clear: both;
 }
